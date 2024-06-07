@@ -6,7 +6,8 @@ This is Minecraft Mod "MineCard"
 
 > **作者 (Author): Senyu**
 
-现在这个 mod 还在构建中，尽请期待。
+**现在这个 mod 还在构建中，尽请期待。**
+
 This mod is currently under construction, stay tuned!
 
 ## 加入我们的社区 
