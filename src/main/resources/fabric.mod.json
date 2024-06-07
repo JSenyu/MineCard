@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "mine_cards",
+	"version": "${version}",
+	"name": "Example mod",
+	"description": "Do you like MineCards?",
+	"authors": [
+		"Senyu!"
+	],
+	"contact": {
+		"homepage": "null",
+		"sources": "null"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mine_cards/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"icu.senyu.mine_cards.MineCards"
+		]
+	},
+	"mixins": [
+		"mine_cards.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
