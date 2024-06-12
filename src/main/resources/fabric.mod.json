@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "mine_cards",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "MineCards mod",
 	"description": "Do you like MineCards?",
 	"authors": [
 		"Senyu!"
@@ -11,12 +11,15 @@
 		"homepage": "null",
 		"sources": "null"
 	},
-	"license": "CC0-1.0",
+	"license": "Custom",
 	"icon": "assets/mine_cards/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"icu.senyu.mine_cards.MineCards"
+		],
+		"client": [
+			"icu.senyu.mine_cards.client.ClientMineCards"
 		]
 	},
 	"mixins": [
