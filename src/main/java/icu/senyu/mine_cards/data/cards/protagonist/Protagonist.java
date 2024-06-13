@@ -27,7 +27,7 @@ public class Protagonist{
     public boolean isOverload = false;
 
     // 卡牌列表，玩家当前手牌
-    public CardList cards = new CardList();
+    public CardList<?> cards = new CardList<>();
 
     /**
      * 玩家角色的构造函数，用于初始化关键数据

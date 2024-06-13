@@ -1,32 +1,30 @@
 package icu.senyu.mine_cards.data.cards;
 
 import com.google.gson.JsonObject;
+import icu.senyu.mine_cards.MineCards;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 /**
  * 这是卡牌的抽象类，所有的卡牌都将继承这个类的内容
  * */
 public abstract class AbsCard {
 
-    protected final String name;
-    protected String displayName;
+    protected final Identifier registerName;
     protected final int cost;
 
-    protected AbsCard(String cardName, int cost){
-        this.name = cardName;
+    protected AbsCard(CardType type, String cardName, int cost){
+        this.registerName = Identifier.of(MineCards.MOD_ID, type.id + "." + cardName);
         this.cost = cost;
     }
 
 
-    public String getName() {
-        return name;
+    public Identifier getRegisterName() {
+        return this.registerName;
     }
 
-    public void setDisplayName(String displayName) {
-        this.displayName = displayName;
-    }
-
-    public String getDisplayName() {
-        return displayName;
+    public Text getDisplayName() {
+        return Text.translatable(this.registerName.toTranslationKey());
     }
 
     public int getCost() {

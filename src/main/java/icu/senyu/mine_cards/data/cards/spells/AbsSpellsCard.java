@@ -1,6 +1,7 @@
 package icu.senyu.mine_cards.data.cards.spells;
 
 import icu.senyu.mine_cards.data.cards.AbsCard;
+import icu.senyu.mine_cards.data.cards.CardType;
 import icu.senyu.mine_cards.data.cards.UseStatus;
 
 public abstract class AbsSpellsCard extends AbsCard {
@@ -11,7 +12,7 @@ public abstract class AbsSpellsCard extends AbsCard {
     public final SpellsCardType type;
 
     protected AbsSpellsCard(String cardName, SpellsCardType type, int cost) {
-        super(cardName, cost);
+        super(CardType.SPELLS, cardName, cost);
         this.type = type;
     }
 

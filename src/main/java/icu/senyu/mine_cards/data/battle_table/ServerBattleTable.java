@@ -1,6 +1,7 @@
 package icu.senyu.mine_cards.data.battle_table;
 
 import icu.senyu.mine_cards.data.cards.CardList;
+import icu.senyu.mine_cards.data.cards.followers.AbsFollowersCard;
 import icu.senyu.mine_cards.data.cards.protagonist.Protagonist;
 import icu.senyu.mine_cards.data.cards.venue.Venue;
 import net.minecraft.entity.player.PlayerEntity;
@@ -20,8 +21,12 @@ public class ServerBattleTable {
     // 两名玩家的牌库，初始化时会根据费用随机排序
     // 费用低的会尽量排在前面，防止高费卡手
     // 算法未写
-    private final CardList player0Cards = new CardList();
-    private final CardList player1Cards = new CardList();
+    private final CardList<?> player0Cards = new CardList<>();
+    private final CardList<?> player1Cards = new CardList<>();
+
+    // 两名玩家的随从站位
+    private final CardList<AbsFollowersCard> player0FollowersCards = new CardList<>();
+    private final CardList<AbsFollowersCard> player1FollowersCards = new CardList<>();
 
     // 当前回合玩家
     private boolean isRoundPlayer0 = true;
