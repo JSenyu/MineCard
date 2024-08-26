@@ -14,7 +14,7 @@ public class CardList<C extends AbsCard> {
         cards.add(card);
     }
 
-    // toJsonObject·½·¨
+    // toJsonObjectæ–¹æ³•
     public JsonArray toJson() {
         JsonArray jsonArray = new JsonArray();
         for (C card : cards) {

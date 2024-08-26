@@ -6,7 +6,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 /**
- * 这是卡牌的抽象类，所有的卡牌都将继承这个类的内容
+ * 杩欐槸鍗＄墝鐨勬娊璞＄被锛屾墍鏈夌殑鍗＄墝閮藉皢缁ф壙杩欎釜绫荤殑鍐呭
  * */
 public abstract class AbsCard {
 

@@ -7,7 +7,7 @@ import icu.senyu.mine_cards.data.cards.UseStatus;
 public abstract class AbsSpellsCard extends AbsCard {
 
     /**
-     * ·¨Êõ¿¨µÄÀàĞÍ
+     * æ³•æœ¯å¡çš„ç±»å‹
      * */
     public final SpellsCardType type;
 
@@ -17,14 +17,14 @@ public abstract class AbsSpellsCard extends AbsCard {
     }
 
     /**
-     * ÊÇ·ñÄÜ¹»Ôì³ÉÈºÌåĞ§¹û£¬Ò»°ãÓë isOnlyForEnemies() ·½·¨´îÅäÊ¹ÓÃ
+     * æ˜¯å¦èƒ½å¤Ÿé€ æˆç¾¤ä½“æ•ˆæœï¼Œä¸€èˆ¬ä¸ isOnlyForEnemies() æ–¹æ³•æ­é…ä½¿ç”¨
      * */
     public boolean isGroupEffect(){
         return false;
     }
 
     /**
-     * ÊÇ·ñÖ»¶ÔµĞ·½ÉúĞ§£¬Èç¹û²»ÊÇ£¬Ôò»á¶Ô°üÀ¨×Ô¼ºÅÆÔì³ÉĞ§¹û£¬²»Ô¼ÊøÖ¸ÏòĞÔ·¨Êõ
+     * æ˜¯å¦åªå¯¹æ•Œæ–¹ç”Ÿæ•ˆï¼Œå¦‚æœä¸æ˜¯ï¼Œåˆ™ä¼šå¯¹åŒ…æ‹¬è‡ªå·±ç‰Œé€ æˆæ•ˆæœï¼Œä¸çº¦æŸæŒ‡å‘æ€§æ³•æœ¯
      * */
     public boolean isOnlyForEnemies(){
         return true;
@@ -32,7 +32,7 @@ public abstract class AbsSpellsCard extends AbsCard {
 
 
     /**
-     * µ±¿¨ÅÆ±»Ê¹ÓÃÊ±´¥·¢
+     * å½“å¡ç‰Œè¢«ä½¿ç”¨æ—¶è§¦å‘
      * */
     @Override
     public UseStatus onUse() {
@@ -48,17 +48,17 @@ public abstract class AbsSpellsCard extends AbsCard {
 
     public static enum SpellsCardType{
         /**
-         * ¹¥»÷ĞÍ·¨Êõ£¬Ò»°ãÊÇ¶Ô³¡ÉÏµÄ¿¨ÅÆÔì³É·¨ÊõÉËº¦£¬¶ÔÍöÁéÉúÎïÔì³ÉÖÎÁÆ
+         * æ”»å‡»å‹æ³•æœ¯ï¼Œä¸€èˆ¬æ˜¯å¯¹åœºä¸Šçš„å¡ç‰Œé€ æˆæ³•æœ¯ä¼¤å®³ï¼Œå¯¹äº¡çµç”Ÿç‰©é€ æˆæ²»ç–—
          * */
         DAMAGE,
 
         /**
-         * ÖÎÁÆĞÍ·¨Êõ£¬Ò»°ãÊÇ¶Ô³¡ÉÏµÄ¿¨ÅÆÔì³É·¨ÊõÖÎÁÆĞ§¹û£¬¶ÔÍöÁéÉúÎïÔì³ÉÉËº¦
+         * æ²»ç–—å‹æ³•æœ¯ï¼Œä¸€èˆ¬æ˜¯å¯¹åœºä¸Šçš„å¡ç‰Œé€ æˆæ³•æœ¯æ²»ç–—æ•ˆæœï¼Œå¯¹äº¡çµç”Ÿç‰©é€ æˆä¼¤å®³
          * */
         HEALING,
 
         /**
-         * ¹¦ÄÜĞÍ·¨Êõ£¬ĞèÒªÊÖ¶¯ÉèÖÃ·¨ÊõĞ§¹û
+         * åŠŸèƒ½å‹æ³•æœ¯ï¼Œéœ€è¦æ‰‹åŠ¨è®¾ç½®æ³•æœ¯æ•ˆæœ
          * */
         FUNCTIONAL;
 
